@@ -1,0 +1,98 @@
+html,
+body {
+  background-color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  color: $default;
+  line-height: 1.8;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+button,
+a,
+textarea,
+input,
+iframe {
+  &:focus {
+    outline: 1px solid $title;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--lg {
+    max-width: 1800px;
+  }
+}
+.main {
+  &__title {
+    font-size: 0;
+  }
+}
+.title {
+  margin-bottom: 10px;
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
+  &--main {
+    font-size: 0;
+  }
+}
+
+.text-nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.pagination {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  justify-content: center;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  &__page__next{
+    display: flex;
+  }  
+  &__link {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 50px;
+    min-width: 50px;
+    border: 1px solid $accent;
+    color: $link;
+    background-color: transparent;
+    &:hover {
+      color: $link;
+      background-color: $accent;
+    }
+    &--active {
+      color: #fff;
+      background-color: $accent;
+    }
+}
+}
+
+

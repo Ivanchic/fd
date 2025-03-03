@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee Shop</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--lg">
+      <nav class="header__inner">
+        <button class="menu__btn" type="button">
+          <span class="menu__btn-line"></span>
+        </button>
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Home +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="page.html">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="user-nav">
+          <button class="user-nav__btn user-nav__btn--search" type="button">
+            Search
+          </button>
+          <div class="user-nav__wrapper">
+            <a class="user-nav__link user-nav__link--like" href="#">
+              Favourites
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              Cart
+              <span class="user-nav__num">0</span>
+            </a>
+          </div>
+          <button class="user-nav__btn user-nav__btn--menu" type="button">
+            Menu
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="top">
+      <div class="top__inner">
+        <h2 class="top__title">
+          Product List
+        </h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Product list 1</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <section class="catalog">
+      <div class="container">
+        <button class="catalog__filters-btn">Show Filters</button>
+        <div class="catalog__inner">
+          <div class="catalog__filters">
+
+            <div class="filter__block">
+              <span class="filter__title">Category</span>
+              <ul class="filter__category-list">
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Chair</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Table</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Lamp</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Watch</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Clock</a>
+                </li>
+              </ul>
+            </div>
+               <div class="filter__block">
+              <h3 class="filter__title">Price</h3>
+                <form class="filter-price__form" action="#">
+                <input class="filter__range-input" type="text" id="range" name="my_range" data-min="0" data-max="1000" data-from="100" data-to="500">
+                <div class="filter__range-price">
+                  <span>$<span class="filter__range-min"></span></span>
+                  <span>$<span class="filter__range-max"></span></span>
+                </div>
+              </form>
+            </div>
+            
+            <div class="filter__block">
+              <span class="filter__title">Brand</span>
+              <form class="filter__brand-form">
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+                
+              </form>
+            </div>
+
+            <div class="filter__block">
+              <span class="filter__title">Recent Products</span>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/1.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/2.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/3.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+            </div>
+
+            <button class="catalog__filters-close">Close filters</button>
+
+          </div>
+
+
+          <div class="catalog__products">
+             <div class="shop-content">
+            <div class="shop-content__filter">
+              <div class="shop-content__filter-buttons">
+                <span>View</span>
+                <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                    height="15px">
+                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                      d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z" />
+                  </svg>
+                </button>
+                <button class="shop-content__filter-btn button-list">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                    height="15px">
+                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                      d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="shop-content__filter-selects">
+                <form class="shop-content__filter-form" action="#">
+                  <select class="select-style">
+                    <option value="">Sort By Default</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                  <select class="select-style">
+                    <option value="">Show 9</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__cards">
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/1.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/2.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/3.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/4.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/5.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/6.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/1.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/2.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/3.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/4.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/5.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/6.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+            </div>
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__page pagination__page--active">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+              </ul>
+                 <ul class="pagination__list">
+                <li class="pagination__page pagination__page--active">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+              </ul>
+               <ul class="pagination__list">
+                <li class="pagination__page pagination__page--active">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+              </ul>
+              <a class="pagination__link pagination__page--next" href="#">Next</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="partners">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/1.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/2.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/3.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/4.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/5.png">
+        </li>
+      </ul>
+    </div>   
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col footer__col--contacts">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+          <address class="footer__address">
+            <ul class="footer__list">
+              <li class="footer__link">
+                <span>ADDRESS: 4772 Wines Lane Houston, TX 77032</span>
+              </li>
+              <li class="footer__link">
+                <a href="tel:8323475843">
+                  TELEPHONE: +832-347-5843
+                </a>
+              </li>
+              <li class="footer__link">
+                <a href="mailto:contact@Glee.om">
+                  EMAIL: contact@Glee.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__col footer__hidden">
+          <span class="footer__title">Services</span>
+          <ul class="footer__list">
+            <li class="footer__link">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Return Policy</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Our Blog</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__hidden">
+          <span class="footer__title">Account</span>
+          <ul class="footer__list">
+            <li class="footer__link">
+              <a href="#">Your Account</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Checkout</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Login</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--form">
+          <span class="footer__title">Newsletter</span>
+          <p class="footer__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer__form" action="#">
+            <label for="footer__input" class="footer__label">Email address</label>
+            <input class="footer__input" name="footer__input" type="email" placeholder="Email address" required>
+            <button class="footer__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          ©2020 CopyRight Example. All rights reserved.
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Home</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">About</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Blog</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
